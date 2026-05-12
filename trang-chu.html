@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOFF Architecture - Kiến Tạo Không Gian Sống</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary: #004a99; --accent: #f39c12; --dark: #222; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; scroll-behavior: smooth; }
+        .navbar-brand img { height: 50px; width: auto; object-fit: contain; }
+        .nav-link { font-weight: 600; text-transform: uppercase; font-size: 13px; margin: 0 10px; }
+        .hero-home {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920');
+            height: 80vh; background-size: cover; background-position: center;
+            display: flex; align-items: center; color: white; text-align: center;
+        }
+        .heading-box { border: 1px solid #333; display: inline-block; padding: 10px 30px; font-weight: 700; text-transform: uppercase; margin-bottom: 30px; }
+        .feature-item { padding: 30px; border: 1px solid #eee; background: #fff; border-radius: 10px; transition: 0.3s; height: 100%; }
+        .feature-item:hover { box-shadow: 0 10px 25px rgba(0,0,0,0.1); transform: translateY(-5px); }
+        .consult-section { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1500') center/cover;
+            color: white; padding: 80px 0;
+        }
+        footer { background: #1a1a1a; color: #999; padding: 60px 0 20px; }
+        footer h5 { color: white; font-weight: 700; margin-bottom: 25px; }
+        footer a { color: #999; text-decoration: none; transition: 0.3s; }
+        footer a:hover { color: var(--accent); }
+        .avatar-vn { width: 70px; height: 70px; object-fit: cover; border: 2px solid #f39c12; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="trang-chu.html">
+            <img src="image_e103ed.png" alt="FOFF Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="trang-chu.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Kiến trúc</a></li>
+                <li class="nav-item"><a class="nav-link" href="#consult-section">Tư vấn miễn phí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer-section">Về chúng tôi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer-section">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero-home">
+    <div class="container">
+        <h1 class="display-3 fw-bold mb-3">KIẾN TRÚC & NỘI THẤT FOFF</h1>
+        <p class="fs-4 mb-5">Tâm trong từng nét vẽ - Đẳng cấp trong từng không gian</p>
+        <a href="index.html" class="btn btn-warning btn-lg px-5 fw-bold text-white">XEM MẪU THIẾT KẾ</a>
+    </div>
+</section>
+
+<section class="py-5 bg-light border-top">
+    <div class="container text-center">
+        <div class="heading-box">Tại sao chọn FOFF?</div>
+        <p class="text-muted mb-5 px-md-5">Dịch vụ của <b>Kiến Trúc & Nội Thất FOFF</b> được chọn lọc kỹ càng, chất lượng cao, đem đến sự hài lòng tuyệt đối.</p>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="feature-item">
+                    <i class="fa-regular fa-circle-check fa-3x text-secondary mb-3"></i>
+                    <h6>Quy Trình Chặt Chẽ</h6>
+                    <p class="small text-muted">Đảm bảo an tâm tuyệt đối trong suốt quá trình thiết kế và thi công.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-item">
+                    <i class="fa-regular fa-clock fa-3x text-secondary mb-3"></i>
+                    <h6>Luôn Đúng Tiến Độ</h6>
+                    <p class="small text-muted">Cam kết bàn giao công trình đúng thời hạn thỏa thuận.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-item">
+                    <i class="fa-solid fa-users fa-3x text-secondary mb-3"></i>
+                    <h6>Tư Vấn Tận Tình</h6>
+                    <p class="small text-muted">Đội ngũ giàu kinh nghiệm, hỗ trợ khách hàng 24/7.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-item">
+                    <i class="fa-regular fa-image fa-3x text-secondary mb-3"></i>
+                    <h6>Thẩm Mỹ Hoàn Thiện</h6>
+                    <p class="small text-muted">Sự kết hợp hoàn hảo giữa công năng và phong thủy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container text-center">
+        <div class="heading-box">Đánh giá của khách hàng</div>
+        <div class="row text-start mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="p-4 border rounded d-flex align-items-start shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=150&q=80" class="rounded-circle me-3 avatar-vn">
+                    <div>
+                        <div class="text-warning small mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                        <p class="small italic">"Đội ngũ FOFF làm việc rất chuyên nghiệp. Bản vẽ kiến trúc cực kỳ chi tiết giúp thợ thi công rất dễ dàng."</p>
+                        <strong class="small">- Anh Trần Anh Quân</strong>
+                        <p class="mb-0 text-muted" style="font-size: 11px;">Chủ đầu tư tại Hà Nội</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4 border rounded d-flex align-items-start shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1567532939604-b6c5b0ad2e01?auto=format&fit=crop&w=150&q=80" class="rounded-circle me-3 avatar-vn">
+                    <div>
+                        <div class="text-warning small mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                        <p class="small italic">"Tôi hài lòng nhất ở khâu tư vấn phong thủy và cách tận dụng ánh sáng tự nhiên cho căn nhà phố của tôi."</p>
+                        <strong class="small">- Chị Lê Mai Phương</strong>
+                        <p class="mb-0 text-muted" style="font-size: 11px;">Chủ đầu tư tại Hải Phòng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="consult-section" class="consult-section text-center">
+    <div class="container">
+        <h3 class="fw-bold mb-3 text-uppercase">Nhận tư vấn miễn phí</h3>
+        <form id="consultForm" class="row justify-content-center g-3">
+            <div class="col-md-3"><input type="text" class="form-control py-2" placeholder="Họ và tên" required></div>
+            <div class="col-md-3"><input type="text" class="form-control py-2" placeholder="Số điện thoại" required></div>
+            <div class="col-md-3"><input type="email" class="form-control py-2" placeholder="Email" required></div>
+            <div class="col-md-2"><button type="submit" class="btn btn-light w-100 fw-bold py-2">ĐĂNG KÝ</button></div>
+        </form>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <h3 class="text-center fw-bold mb-5">BLOG & TIN TỨC</h3>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="rounded overflow-hidden shadow-sm mb-3">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800" class="img-fluid w-100">
+                </div>
+                <h5 class="fw-bold">Công trình nhà phố hiện đại tại FOFF Yên Xá</h5>
+            </div>
+            <div class="col-md-6 d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-3 p-2 border-bottom">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=150" class="rounded" style="width:100px; height:75px; object-fit:cover;">
+                    <p class="mb-0 fw-bold small">Thi công chung cư trọn gói cho khách hàng tại Hà Nội</p>
+                </div>
+                <div class="d-flex align-items-center gap-3 p-2 border-bottom">
+                    <img src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=150" class="rounded" style="width:100px; height:75px; object-fit:cover;">
+                    <p class="mb-0 fw-bold small">Bí quyết chọn màu sơn phong thủy cùng FOFF Architecture</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer-section">
+    <div class="container">
+        <div class="row text-start">
+            <div class="col-md-4 mb-4">
+                <h5 class="text-warning">THÔNG TIN LIÊN HỆ</h5>
+                <p class="small mb-2"><i class="fa fa-phone me-2"></i> HOTLINE: 0332717407</p>
+                <p class="small mb-2"><i class="fa fa-location-dot me-2"></i> 14LK10 Tổng cục V Yên Xá, Thanh Trì, Hà Nội</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <h5 class="text-warning text-uppercase">Về Chúng Tôi</h5>
+                <a href="https://www.facebook.com/profile.php?id=61581924296622" class="me-3 text-white" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://www.youtube.com/@TuVanThietKeFoff" class="me-3 text-white" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+                <a href="https://www.tiktok.com/@buihuuphucoff" class="text-white" target="_blank"><i class="fab fa-tiktok fa-lg"></i></a>
+            </div>
+            <div class="col-md-4 mb-4 text-end">
+                <h5 class="text-warning">FANPAGE</h5>
+                <div class="p-2 border border-secondary rounded d-inline-block bg-dark">
+                    <a href="https://www.facebook.com/profile.php?id=61581924296622" target="_blank" class="btn btn-primary btn-sm px-4">Theo dõi</a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary mt-5">
+        <div class="text-center small">Copyright 2026 © FOFF Architecture</div>
+    </div>
+</footer>
+
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <div class="modal-body">
+        <i class="fa-solid fa-circle-check text-success fa-4x mb-3"></i>
+        <h4 class="fw-bold">Cảm ơn bạn!</h4>
+        <p>Chúng tôi đã nhận được thông tin. Đội ngũ FOFF sẽ liên hệ tư vấn cho bạn trong thời gian sớm nhất.</p>
+        <button type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('consultForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var myModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+        myModal.show();
+        this.reset();
+    });
+</script>
+</body>
+</html>

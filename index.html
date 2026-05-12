@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiến Trúc FOFF - 14LK10 Tổng cục V Yên Xá</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary: #004a99; --accent: #f39c12; --dark: #2c2c2c; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; color: #333; line-height: 1.6; scroll-behavior: smooth; }
+        
+        /* Navbar */
+        .navbar-brand { font-weight: 800; color: var(--primary) !important; padding: 0; }
+        .navbar-brand img { height: 50px; width: auto; object-fit: contain; }
+        .nav-link { font-weight: 600; text-transform: uppercase; font-size: 13px; color: #444 !important; }
+        
+        /* Breadcrumb Header */
+        .page-header { text-align: center; padding: 60px 0; background: #f8f9fa; border-bottom: 1px solid #eee; }
+        .page-header h1 { font-weight: 700; font-size: 35px; margin-bottom: 10px; }
+
+        /* Project Cards */
+        .img-container { width: 100%; height: 250px; overflow: hidden; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .img-container img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .project-card:hover img { transform: scale(1.1); }
+        .project-title { display: block; font-weight: 700; text-decoration: none; color: #333; margin-top: 15px; font-size: 17px; }
+        .foff-commit { background: #fff9f0; border-left: 4px solid var(--accent); padding: 10px; margin-top: 10px; font-size: 13px; border-radius: 4px; }
+
+        /* Section Headings */
+        .heading-box { border: 1px solid #333; display: inline-block; padding: 8px 25px; font-weight: 700; text-transform: uppercase; margin-bottom: 30px; }
+
+        /* Features */
+        .feature-item { padding: 30px; border: 1px solid #eee; background: #fff; border-radius: 10px; height: 100%; transition: 0.3s; }
+        .feature-item:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+
+        /* Consultation Form */
+        .consult-section { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1500&q=80') center/cover;
+            color: white; padding: 80px 0;
+        }
+
+        /* Footer */
+        footer { background: #222; color: #bbb; padding: 60px 0 20px; }
+        footer h5 { color: white; font-weight: 700; margin-bottom: 25px; font-size: 16px; }
+        footer a { color: #bbb; text-decoration: none; font-size: 14px; }
+        footer a:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+    <div class="container">
+        <a class="navbar-brand" href="trang-chu.html">
+            <img src="image_e103ed.png" alt="FOFF Architecture Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="trang-chu.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Kiến trúc</a></li>
+                <li class="nav-item"><a class="nav-link" href="trang-chu.html#consult-section">Tư vấn miễn phí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer-section">Về chúng tôi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer-section">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="page-header">
+    <div class="container">
+        <h1>KIẾN TRÚC</h1>
+        <p class="text-muted"><a href="trang-chu.html" class="text-decoration-none">Trang chủ</a> / Kiến trúc</p>
+    </div>
+</header>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4 project-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80">
+                </div>
+                <a href="#" class="project-title">Biệt thự 2 tầng Tân cổ điển</a>
+                <div class="foff-commit"><b>FOFF CAM KẾT:</b> Miễn phí thiết kế, giám sát thi công trọn gói.</div>
+            </div>
+            <div class="col-md-4 project-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1513584684374-8bdb7483fe8f?auto=format&fit=crop&w=800&q=80">
+                </div>
+                <a href="#" class="project-title">Nhà phố FOFF Modern (Hải Phòng)</a>
+                <div class="foff-commit"><b>FOFF CAM KẾT:</b> Đảm bảo đúng tiến độ bàn giao 100%.</div>
+            </div>
+            <div class="col-md-4 project-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=800&q=80">
+                </div>
+                <a href="#" class="project-title">Kiến trúc nhà Vườn nghỉ dưỡng</a>
+                <div class="foff-commit"><b>FOFF CAM KẾT:</b> Giải pháp vật liệu tối ưu, tiết kiệm chi phí.</div>
+            </div>
+            <div class="col-md-4 project-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80">
+                </div>
+                <a href="#" class="project-title">Mẫu Kiến trúc nhà phố FOFF</a>
+                <div class="foff-commit"><b>FOFF CAM KẾT:</b> Bảo hành kết cấu lên tới 10 năm.</div>
+            </div>
+            <div class="col-md-4 project-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80">
+                </div>
+                <a href="#" class="project-title">Mẫu kiến trúc Biệt thự Ba Vì</a>
+                <div class="foff-commit"><b>FOFF CAM KẾT:</b> Phối cảnh 3D chân thực, thi công giống bản vẽ.</div>
+            </div>
+            <div class="col-md-4 project-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1628744876497-eb30460be9f6?auto=format&fit=crop&w=800&q=80">
+                </div>
+                <a href="#" class="project-title">Mẫu kiến trúc nhà phố hiện đại</a>
+                <div class="foff-commit"><b>FOFF CAM KẾT:</b> Tư vấn phong thủy chuyên sâu từ chuyên gia.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light border-top">
+    <div class="container text-center">
+        <div class="heading-box">Tại sao chọn FOFF?</div>
+        <p class="text-muted mb-5 px-md-5">Dịch vụ của <b>Kiến Trúc & Nội Thất FOFF</b> được chọn lọc kỹ càng, chất lượng cao, đem đến sự hài lòng tuyệt đối.</p>
+        
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="feature-item">
+                    <i class="fa-regular fa-circle-check fa-3x text-secondary mb-3"></i>
+                    <h6>Quy Trình Chặt Chẽ</h6>
+                    <p class="small text-muted">Đảm bảo an tâm tuyệt đối trong suốt quá trình thiết kế và thi công.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-item">
+                    <i class="fa-regular fa-clock fa-3x text-secondary mb-3"></i>
+                    <h6>Luôn Đúng Tiến Độ</h6>
+                    <p class="small text-muted">Cam kết bàn giao công trình đúng thời hạn thỏa thuận.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-item">
+                    <i class="fa-solid fa-users fa-3x text-secondary mb-3"></i>
+                    <h6>Tư Vấn Tận Tình</h6>
+                    <p class="small text-muted">Hỗ trợ khách hàng 24/7.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-item">
+                    <i class="fa-regular fa-image fa-3x text-secondary mb-3"></i>
+                    <h6>Thẩm Mỹ Hoàn Thiện</h6>
+                    <p class="small text-muted">Hài hòa công năng và phong thủy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container text-center">
+        <div class="heading-box">Đánh giá của khách hàng</div>
+        <div class="row text-start mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="p-4 border rounded d-flex align-items-start shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=150&q=80" class="rounded-circle me-3" style="width:70px; height:70px; object-fit:cover; border: 2px solid #f39c12;">
+                    <div>
+                        <div class="text-warning small mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                        <p class="small italic">"Tôi rất hài lòng với cách làm việc của FOFF Architecture. Tiến độ nhanh, minh bạch chi phí."</p>
+                        <strong class="small">- Anh Trần Anh Quân</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4 border rounded d-flex align-items-start shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1567532939604-b6c5b0ad2e01?auto=format&fit=crop&w=150&q=80" class="rounded-circle me-3" style="width:70px; height:70px; object-fit:cover; border: 2px solid #f39c12;">
+                    <div>
+                        <div class="text-warning small mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                        <p class="small italic">"Cảm ơn đội ngũ FOFF đã kiến tạo cho gia đình tôi một không gian sống mơ ước."</p>
+                        <strong class="small">- Chị Lê Mai Phương</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="consult-section text-center">
+    <div class="container">
+        <h3 class="fw-bold mb-3">NHẬN TƯ VẤN MIỄN PHÍ</h3>
+        <p class="mb-5">Liên hệ với <b>Kiến Trúc FOFF</b> ngay để nâng tầm cuộc sống của quý vị.</p>
+        <form class="row justify-content-center g-3">
+            <div class="col-md-3"><input type="text" class="form-control" placeholder="Họ và tên"></div>
+            <div class="col-md-3"><input type="text" class="form-control" placeholder="Số điện thoại"></div>
+            <div class="col-md-3"><input type="email" class="form-control" placeholder="Email"></div>
+            <div class="col-md-2"><button type="submit" class="btn btn-warning w-100 fw-bold">ĐĂNG KÝ</button></div>
+        </form>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <h3 class="text-center fw-bold mb-5">BLOG & TIN TỨC</h3>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="rounded overflow-hidden shadow-sm mb-3">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" class="img-fluid w-100">
+                </div>
+                <h5 class="fw-bold">Công trình nhà phố hiện đại tại FOFF Yên Xá</h5>
+            </div>
+            <div class="col-md-6 d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-3 p-2 border-bottom">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=150&q=80" class="rounded" style="width:100px; height:75px; object-fit:cover;">
+                    <p class="mb-0 fw-bold small">Thi công chung cư trọn gói cho khách hàng tại Hà Nội</p>
+                </div>
+                <div class="d-flex align-items-center gap-3 p-2 border-bottom">
+                    <img src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&w=150&q=80" class="rounded" style="width:100px; height:75px; object-fit:cover;">
+                    <p class="mb-0 fw-bold small">Bí quyết chọn màu sơn phong thủy cùng FOFF Architecture</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="text-warning">THÔNG TIN LIÊN HỆ</h5>
+                <p class="small mb-2"><i class="fa fa-phone me-2"></i> HOTLINE: 0332717407</p>
+                <p class="small mb-2"><i class="fa fa-location-dot me-2"></i> 14LK10 Tổng cục V Yên Xá, Tân Triều, Thanh Trì, Hà Nội</p>
+                <p class="small mb-2"><i class="fa fa-envelope me-2"></i> Email: contact@foff.vn</p>
+            </div>
+            
+            <div class="col-md-4 mb-4 text-md-center">
+                <h5 class="text-warning text-uppercase">Về Chúng Tôi</h5>
+                <div class="fs-4">
+                    <a href="https://www.facebook.com/profile.php?id=61581924296622" class="text-white me-3" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@TuVanThietKeFoff" class="text-white me-3" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@buihuuphucoff" class="text-white" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 text-md-end">
+                <h5 class="text-warning">FANPAGE</h5>
+                <div class="p-3 border border-secondary rounded d-inline-block text-center bg-dark">
+                    <a href="https://www.facebook.com/profile.php?id=61581924296622" target="_blank" class="btn btn-primary btn-sm px-4">Theo dõi</a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary mt-5">
+        <div class="text-center small">
+            Copyright 2026 © Kiến Trúc Và Nội Thất FOFF
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
